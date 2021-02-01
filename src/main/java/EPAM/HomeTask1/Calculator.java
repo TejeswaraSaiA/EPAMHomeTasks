@@ -13,12 +13,24 @@ public class Calculator
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println("Enter the operation that you want to perform on the inputted Numbers\n"
-				+ "Addition - 1\n"
-				+ "Subtraction - 2\n"
-				+ "Multiplication - 3\n"
-				+ "Division - 4");
+				+ "Addition (a+b) - 1\n"
+				+ "Subtraction (a-b) - 2\n"
+				+ "Multiplication (a*b) - 3\n"
+				+ "Division (a/b) - 4");
 		int operation = scan.nextInt();
 		System.out.println(operation);
+		Operation Op = new Operation();
+		int output = Op.PerformOperation(a, b, operation);
+		if(output == -2)
+		{
+			System.out.println("Enter Valid Operations");
+		}
+		else
+		{
+			System.out.println("Result of the Desired Operation on the Provided Numbers is"+output);
+		}
+		
+		scan.close();
 		
 	}
 
