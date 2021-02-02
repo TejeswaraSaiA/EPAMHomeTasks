@@ -15,7 +15,7 @@ public class Calculator
 			System.out.println("Divide With Zero");
 		}
 		else
-		{
+		{ 
 			System.out.println(a/b);
 		}
 	}
