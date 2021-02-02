@@ -48,7 +48,7 @@ public class Calculator
 			if(op == 1)
 			{
 				System.out.println("Performing Addition Operation on "+a+" "+b);
-				Add(a,b);
+				Add(a,b); 
 			}
 			else if(op == 2)
 			{
